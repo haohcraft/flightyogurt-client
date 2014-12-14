@@ -1,0 +1,112 @@
+/*=============================================
+=            LESS for the calendar            =
+=============================================*/
+
+@import 'varibles.less';
+
+.fy-calendar {
+	position: relative;
+
+	.fy-calendar-guide {
+		height: 40px;
+		font-size: 18px;
+		color: @color-white;
+		text-align: center;
+		background-color: @color-belize-hole;
+
+		.fy-calendar-guide-title {
+			position: absolute;
+			top: 0px;
+			left: 5px;
+			padding: 5px;
+		}
+		.fy-calendar-guide-action {
+			position: absolute;
+			top: 0px;
+			right: 5px;
+			padding: 5px;
+		}
+	}
+
+	.fy-calendar-header {
+
+		.fy-calendar-header-day {
+			color: @color-belize-hole;
+			width: 100%/7;
+			font-size: 12px;
+			height: 25px;
+			padding: 1px;
+			background-color: @color-grey-light;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+
+	.fy-calendar-grid {
+		height: 380px;
+		overflow-y: scroll;
+
+		.fy-calendar-month {
+
+			.fy-calendar-month-header {
+				color: @color-belize-hole;
+				height: 35px;
+				text-align: center;
+				background-color: @color-grey-light;
+			}
+
+			.fy-calendar-month-content {
+
+				.fy-calendar-day {
+					width: 100%/7;
+					padding: 1px;
+					display: inline-block;
+					text-align: center;
+					vertical-align: bottom;
+					background-color: @color-grey-light;
+					cursor: default;
+					
+					&.fy-calendar-day-isnotinmonth {
+						visibility: hidden;
+					}
+
+					&.fy-calendar-day-isclickable {
+						cursor: pointer;
+
+						&.fy-calendar-day-isdeparture, &.fy-calendar-day-isreturn {
+							background-color: @color-purple-yo;
+
+							.fy-calendar-day-content {
+								color: @color-white;
+								background-color: @color-purple-yo;
+							}
+						}
+
+						&.fy-calendar-day-isinbetween {
+							background-color: @color-belize-hole;
+
+							.fy-calendar-day-content {
+								color: @color-white;
+								background-color: @color-belize-hole;	
+							}
+						}
+
+						.fy-calendar-day-content {
+							color: @color-grey-dark;
+						}
+					}
+
+					.fy-calendar-day-content {
+						height: 43px;
+						padding: 6px;
+						color: @color-grey-light;
+						background-color: @color-white;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*-----  End of LESS for the calendar  ------*/
+

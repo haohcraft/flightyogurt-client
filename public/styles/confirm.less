@@ -1,0 +1,54 @@
+/**
+ * LESS for confirm page
+ */
+
+@import "varibles.less";
+
+.fy-confirm {
+	max-width: 500px;
+	font-size: 24px;
+	
+	.fy-confirm-slogan {
+
+		.fy-confirm-slogan-blue {
+			color: @color-belize-hole;
+		}
+
+		.fy-confirm-slogan-purple {
+			color: @color-purple-yo;
+		}
+	}
+
+	.fy-confirm-action-container {
+		position: relative;
+		margin: 0 auto;
+
+		.fy-confirm-action-dashboard, .fy-confirm-action-back	 {
+			position: absolute;
+			top: 0px;
+			.button(@color-white, @color-belize-hole);
+
+			a {
+				color: @color-white;
+			}
+		}
+
+		.fy-confirm-action-dashboard {
+			right: 0px;
+
+			&:active {
+				.transform(scale(.95));
+			}
+		}
+
+		.fy-confirm-action-back {
+			left: 0px;
+
+			&:active {
+				.transform(scale(.95));
+			}
+		}
+
+	}
+
+}

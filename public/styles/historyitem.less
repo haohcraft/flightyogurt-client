@@ -1,0 +1,163 @@
+/*============================================
+=            LESS for HistoryItem            =
+============================================*/
+@import "varibles.less";
+
+.fy-history-item {
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+	min-height: 290px;
+
+	.fy-history-item-head {
+		text-align: center;
+		border-top-left-radius: 6px;
+		background-color: @color-belize-hole;
+		border-top-right-radius: 6px;
+		color: @color-white;
+
+		.fy-history-item-route-container {
+			width: 40%;
+			float: left;
+
+			.fy-history-item-route {
+				font-size: 24px;
+			}
+
+			.fy-history-item-date {
+				font-size: 14px;
+			}
+		}
+
+		.fy-history-item-add {
+			float: left;
+			width: 30%;
+			text-align: left;
+			padding: 15px 0px 15px 15px;
+			color: @color-white;
+		}
+
+		.fy-history-item-pre {
+			display: none;
+			float: right;
+			width: 30%/3;
+			text-align: right;
+			padding: 15px 0px 15px 0px;
+
+			&.shown {
+				display: block;
+			}
+		}
+
+		.fy-history-item-next {
+			display: none;
+			width: 30%/3;
+			text-align: right;
+			float: right;
+			padding: 15px 15px 15px 0px;
+
+			&.shown {
+				display: block;
+			}
+		}
+
+		.fy-history-item-page {
+			font-size: 14px;
+			width: 30%/3;
+			text-align: center;
+			float: right;
+			padding: 17px 0px 17px 0px;
+		}
+
+	}
+	
+	.fy-history-item-price-container {
+		height: 175px;
+		min-height: 0px;
+
+		.fy-history-item-price {
+			margin: 10px;
+			color: @color-grey-dark;
+			line-height: 41px;
+			
+			span {
+				float: left;
+			}
+			.fy-history-item-price-expected {
+				float: left;
+				width: 70px;
+				height: 40px;
+				font-size: 24px;
+				color: @color-belize-hole;
+				padding: 0px;
+				text-align: center;
+				border:2px solid @color-belize-hole;
+				border-radius: 0px;
+				margin: 0px 5px;
+			}
+
+			.fy-history-item-price-update {
+				float: right;
+				padding: 0px 5px;
+				background-color: @color-purple-yo;
+				color: @color-white;
+
+				&:active {
+					.transform(scale(.95));
+				}
+
+			}
+		}
+
+		.fy-history-item-price-sparkline {
+			width: 100%;
+			height: 110px;
+			text-align: center;
+		}
+
+		.fy-history-item-price-nochanges {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+
+			.blue {
+				color: @color-belize-hole;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.fy-history-item-control {
+		position: absolute;		
+		height: 44px;
+		bottom: 0px;
+		width: 100%;
+
+		.fy-history-item-control-more, .fy-history-item-control-dismiss {
+			position: absolute;
+			font-size: 24px;
+			top: 0px;
+			.button(@color-white, @color-belize-hole);
+		}
+
+		.fy-history-item-control-dismiss {
+			right: 0px;
+
+			&:active {
+				.transform(scale(.95));
+			}
+		}
+
+		.fy-history-item-control-more {
+			left: 0px;
+
+			&:active {
+				.transform(scale(.95));
+			}
+		}
+	}
+}
+
+
+/*-----  End of LESS for HistoryItem  ------*/
+

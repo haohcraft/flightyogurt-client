@@ -1,0 +1,50 @@
+/*==========================================
+=            LESS for inputpage            =
+==========================================*/
+@import 'varibles.less';
+
+.fy-inputpage {
+	max-width: 500px;
+	margin: 0px auto;
+	padding-top: 15px;
+	
+	.fy-inputpage-container {
+		position: relative;
+		max-width: 500px;
+		
+		.fy-inputpage-field {
+			width: 85%;
+			height: 40px;
+			padding-left: 10px;
+			border: none;
+		}
+
+		.fy-inputpage-field-delete {
+			position: absolute;
+			display: none;
+			top: 0px;
+			right: 22px;
+			height: 40px;
+			padding: 5px;
+
+			&.shown {
+				display: block;
+			}
+		}
+	}
+}
+
+/*==========  Big size screen  ==========*/
+@media (min-width: @screen-sm-min) {
+	.fy-inputpage {
+		.fy-inputpage-container {
+			.fy-inputpage-field {
+				font-size: 34px;
+			}
+		}
+	}
+}
+
+
+/*-----  End of LESS for inputpage  ------*/
+

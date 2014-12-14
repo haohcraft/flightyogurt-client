@@ -1,0 +1,142 @@
+/**
+ * For animation
+ */
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+      -ms-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.transform(@transform) {
+  -webkit-transform: @transform;
+     -moz-transform: @transform;
+      -ms-transform: @transform;
+       -o-transform: @transform;
+          transform: @transform;
+}
+
+// Animation
+.animation-name(@name) {
+  -webkit-animation-name: @name;
+  -moz-animation-name: @name;
+  -o-animation-name: @name;
+  -ms-animation-name: @name;
+  animation-name: @name;
+}
+
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+  -moz-animation-duration: @duration;
+  -o-animation-duration: @duration;
+  -ms-animation-duration: @duration;
+  animation-duration: @duration;
+}
+
+.animation-iteration-count(@count) {
+  -webkit-animation-iteration-count: @count;
+  -moz-animation-iteration-count: @count;
+  -o-animation-iteration-count: @count;
+  -ms-animation-iteration-count: @count;
+  animation-iteration-count: @count;
+}
+
+.animation-timing-function(@func) {
+  -webkit-animation-timing-function: @func;
+  -moz-animation-timing-function: @func;
+  -o-animation-timing-function: @func;
+  -ms-animation-timing-function: @func;
+  animation-timing-function: @func;
+}
+
+// Animation keyframes
+// @pageWidth: 2000px;
+// .mixin-page-enter-exit(@pageWidth);
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) and (orientation : portrait) { 
+  //iPhone 5 Portrait
+  @pageWidth: 320px;
+  .mixin-page-enter-exit(@pageWidth);
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) and (orientation : portrait) { 
+  //iPhone 6 Portrait
+  @pageWidth: 375px;
+  .mixin-page-enter-exit(@pageWidth);
+
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 667px) and (orientation : portrait) { 
+  //iPhone 6+ Portrait
+  @pageWidth: 414px;
+  .mixin-page-enter-exit(@pageWidth);
+}
+
+@media only sreen and (min-device-width: @screen-sm) and (orientation : portrait) {
+  .mixin-page-enter-exit(@screen-sm);
+}
+
+// Mixin for page animation
+.mixin-page-enter-exit(@pageWidth) {
+  @-webkit-keyframes page-enter-left {
+      0% {
+          display: none;
+          left: -1 * @pageWidth;
+      }
+
+      1% {
+          left: -1 * @pageWidth;
+      }
+
+      100% {
+          left: 0;
+      }
+  }
+
+  @-webkit-keyframes page-enter-right {
+      0% {
+          display: none;
+          left: 2 * @pageWidth;
+      }
+
+      1% {
+          left: 2 * @pageWidth;
+      }
+
+      100% {
+          left: 0;
+      }
+  }
+
+  @-webkit-keyframes page-exit-right {
+      0% {
+          left: 0
+      }
+
+      99% {
+          left: 2 * @pageWidth;
+      }
+
+      100% {
+          display: none
+      }
+  }
+
+  @-webkit-keyframes page-exit-left {
+      0% {
+          left: 0
+      }
+
+      99% {
+          left: -1 * @pageWidth;
+      }
+
+      100% {
+          display: none
+      }
+  }
+}
+

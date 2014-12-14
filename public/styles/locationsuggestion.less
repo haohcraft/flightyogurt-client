@@ -1,0 +1,36 @@
+/*===================================================
+=            LESS for LocationSuggestion            =
+===================================================*/
+@import 'varibles.less';
+
+.fy-locationsuggestion-list {
+
+	height: 200px;
+	margin-top: 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	.fy-locationsuggestion-list-item {
+		padding: 12px;
+		line-height: 16px;
+		font-size: 16px;
+		overflow: hidden;
+		white-space: no-wrap;
+		text-overflow: ellipsis;
+		width: 100%;
+		list-style: none;
+		text-align: left;
+		background-color: @color-white;
+		border: none; 
+		border-top: 1px solid @color-grey-dark; /*The `border` will fallback here*/
+		&:hover {
+			color: @color-white;
+			background-color: @color-belize-hole;
+
+		}
+	}
+
+}
+
+
+/*-----  End of LESS for LocationSuggestion  ------*/
+

@@ -1,0 +1,93 @@
+/**
+ * LESS for search result page
+ */
+@import "varibles.less";
+.fy-searchresult-container {
+	max-width: 500px;
+	position: relative;
+	height: 180px;
+	margin: 0px auto;
+
+	.fy-searchresult {
+		width: 100%;
+
+		.fy-searchresult-form {
+			font-size: 20px;
+			margin: 0px auto;
+			max-width: 500px;
+			padding: 10px 5px 0px;
+			color: @color-grey-dark;
+			line-height: 41px;
+			text-align: left;
+			letter-spacing: 1px;
+
+			.fy-searchresult-form-yo {
+				text-align: center;
+
+				.fy-searchresult-form-yo-name {
+					color: @color-purple-yo;
+				}
+
+				.fy-searchresult-form-yo-input {
+					width: 150px;
+					height: 40px;
+					padding: 0px;
+					margin: 0px;
+					color: @color-purple-yo;
+					border: 2px solid @color-purple-yo;
+					text-align: center;
+					border-radius: 0px;
+					margin: 0px 5px;
+					text-transform:uppercase
+				}
+
+				.fy-searchresult-form-price-sign {
+					color: @color-belize-hole;
+				}	
+
+				.fy-searchresult-form-price-usd {
+					padding-left: 5px;
+					color: @color-belize-hole;
+
+				}
+
+				.fy-searchresult-form-price-input {
+					width: 70px;
+					height: 40px;
+					font-size: 26px;
+					color: @color-belize-hole;
+					padding: 0px;
+					text-align: center;
+					border:2px solid @color-belize-hole;
+					border-radius: 0px;
+					margin: 0px 5px;
+				}
+			}
+
+			.fy-searchresult-form-confirm {
+				width: 150px;
+				height: 44px;
+				margin-top: 5px;
+				color: @color-white;
+				background-color: @color-purple-yo;
+				text-align: center;
+				border-radius: 3px;
+				margin: 5px auto;
+
+				&:active {
+					.transform(scale(.95));
+				}
+
+				&.done {
+					background-color: @color-belize-hole;
+				}
+
+			}
+		}
+	}
+
+	.fy-searchresult-confirm {
+		text-align: center;
+	}
+}
+

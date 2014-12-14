@@ -1,0 +1,54 @@
+/**
+ * Colors
+ * @type {[type]}
+ */
+
+//LESS from bootstrap for the responsive
+@import "~bootstrap/less/variables.less";
+@import "mixins-sprites.less";
+@import "mixins-transition.less";
+
+
+/*==========  Colors  ==========*/
+@color-white: #ffffff;
+@color-grey-dark: #ABABAB;
+@color-grey-light: #f5f7fa;
+@color-purple-yo: #8E44AD;
+@color-transparent: transparent;
+
+@color-wet-asphalt : #34495E;
+@color-midnight-blue : #2C3E50;
+
+@color-belize-hole: #2980B9;
+@color-peter-river: #3498DB;
+
+@color-cloud: #ECF0F1;
+@color-silver: #BDC3C7;
+
+@color-sun-flower: #F1C40F;
+@color-orange: #F39C12;
+
+@color-emerald: #2ECC71;
+@color-nephritis: #27AE60;
+
+@color-alizarin: #E74C3C;
+@color-pomegranate: #C0392B;
+
+/*==========  Button  ==========*/
+.button(@fontColor, @bgColor) {
+	width: 140px;
+	height: 44px;
+	color: @fontColor;
+	background-color: @bgColor;
+	text-align: center;
+	border-radius: 3px;
+	margin: 5px auto;
+}
+
+/*==========  Spite  ==========*/
+
+@sprite-image: '~images/sprite_v1.png';
+.sprite-v1(@x, @y, @sprite-grid) {
+	.sprite(@x, @y, @sprite-image, @sprite-grid);
+}
+

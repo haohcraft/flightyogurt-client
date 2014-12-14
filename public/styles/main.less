@@ -1,0 +1,19 @@
+
+body {
+  
+  background-color: #FFFFFF;
+}
+
+// IOS only allows click events to be delegated to the document on elements
+// it considers 'clickable' - anchors, buttons, etc. So in this project, `button` is used instead of `div`
+// when there is an `onClick` event attached.
+// 
+// Issue https://github.com/facebook/react/issues/1169
+* {
+	cursor: pointer;
+}
+
+button {
+	border: none; 
+}
+
