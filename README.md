@@ -2,6 +2,8 @@
 
 *FlightYogurt* is a YO app to watch your flight price 24/7 before your booking for free. Once the $ drops below your setting you will get YO ’d!
 
+**(YO online challenge Judge Choices Award.)**
+
 ###Story
 
 In the past September two weeks before my trip from Boston to San Francisco, I was searching a cheap flight for that. Luckily enough, I found a flight which was around *$80* cheaper than the one I found the day before. Woohoo, I got a BOS-SFO roundtrip for just 288 bucks! So I was wondering if there is some tool can help people automatically check the fares without tedious typing and refreshing.
