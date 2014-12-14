@@ -20,4 +20,11 @@ Travelers and cheap flight hunter.
 2. Powerful flight search widget
 3. Easy for peole to check their watching list with a few taps
 
+###Development
+
+1. git clone
+2. npm install
+3. gulp build
+4. nodemon app.js
+
 For more, please visiting the [project websit](http://flightyogurt.haohcraft.com/)

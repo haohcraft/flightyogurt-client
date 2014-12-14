@@ -1,4 +1,4 @@
 .DS_Store
 node_modules
 pm*.log
-lib
+dist
