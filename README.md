@@ -21,6 +21,12 @@ Travelers and cheap flight hunter.
 1. Intuitive UI/UX design for mobile
 2. Powerful flight search widget
 3. Easy for peole to check their watching list with a few taps
+ 
+###Tech Stack
+1. ReactJS + Flux
+2. Node.js
+3. Less
+4. webpack + gulp
 
 ###Development
 
